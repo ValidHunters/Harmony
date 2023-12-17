@@ -85,10 +85,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Mono.Cecil" Version="0.11.5" />
-		<PackageReference Include="MonoMod.Core" Version="$(MonoModCoreVersion)" />
+		<PackageReference Include="Mono.Cecil" />
+		<PackageReference Include="MonoMod.Core" />
 		<!-- Reference assemblies are needed for non-Windows .NET Framework targeting builds. -->
-		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" PrivateAssets="all" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageVersion Include="Mono.Cecil" Version="0.11.5" />
+		<PackageVersion Include="MonoMod.Core" Version="$(MonoModCoreVersion)" />
+		<PackageVersion Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" />
 	</ItemGroup>
 
 	<!-- netstandard2.0 reference assemblies -->
